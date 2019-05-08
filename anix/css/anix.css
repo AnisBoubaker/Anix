@@ -1,0 +1,454 @@
+body {
+	/* margin-left: 40px; */
+	scrollbar-face-color:#a2b2f2;
+	scrollbar-shadow-color:#d8defc;
+	scrollbar-highlight-color:#d8defc;
+	scrollbar-darkshadow-color:#d8defc;
+	scrollbar-track-color:#d8defc;
+	scrollbar-arrow-color:#384f78;
+	margin:0;
+	/*background-color:#9fcfe8;*/
+	background-color:#efefef;
+	overflow-y: hidden;
+	font-size:12px;
+}
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%
+}
+form {margin: 0px; }
+img {border: 0px; }
+div { margin: 0px; padding: 0px;}
+p {
+	text-align : justify;
+	margin-left: 5 px;
+	margin-right: 5px;
+	font: normal 12px Verdana, Arial, Helvetica, sans-serif;
+	color:#2b214f;
+}
+
+a {
+	text-align : left;
+	margin-left: 0px;
+	margin-right: 0px;
+	font: normal 10px Verdana, Arial, Helvetica, sans-serif;
+	color:#375b7f;
+}
+
+/**
+* MODULE BUTTONS
+**/
+div#modules_bar{
+	float:left;
+	width:100%;
+	height:40px;
+	background:url(../images/maintab_bgd.png);
+}
+	div#modules_bar div.module_on{
+		float:right;
+		height:40px;
+		background:url(../images/maintab_on_bgd.png);
+		font-family: Arial, sans-serif;
+		font-size: 12px;
+		color:#284974;
+	}
+		div#modules_bar div.module_on div{
+			float:left;
+			height:40px;
+			padding:3px 10px 0 5px;
+			background:url(../images/maintab_on_left.png);
+			background-repeat:no-repeat;
+		}
+
+		div#modules_bar div.module_on img{
+			vertical-align:middle;
+			margin:0 5px 0 0;
+		}
+
+
+	div#modules_bar div.module{
+		float:right;
+		height:40px;
+		background:url(../images/maintab_off_left.png);
+		padding:0 0 0 1px;
+		background-repeat:no-repeat;
+	}
+		div#modules_bar div.module a{
+			display:block;
+			float:left;
+			padding:3px 10px 0 5px;
+			height:37px;
+			text-decoration:none;
+			font-family: Arial, sans-serif;
+			font-size: 12px;
+			font-weight:bold;
+			color:#284974;
+		}
+		div#modules_bar div.module a:hover{
+			display:block;
+			float:left;
+			padding:4px 10px 0px 5px; //moving effect
+			height:40px;
+			background:url(../images/maintab_on_bgd.png);
+		}
+
+		div#modules_bar div.module a img{
+			vertical-align:middle;
+			margin:0 5px 0 0;
+		}
+
+/**
+* LANGUAGE SELECTOR BUTTONS
+**/
+a.language_selector{
+	display:block;
+	float:right;
+	border:1px solid #ffffff;
+	padding:2px 5px 2px 2px;
+	margin:1px 0px 1px 5px;
+	text-decoration:none;
+	font-weight:bold;
+	background-color:#2e72a3;
+	color:#ffffff;
+}
+	a.language_selector img{
+		vertical-align:middle;
+		margin:0 5px 0 0;
+	}
+a.language_selector_on{
+	display:block;
+	float:right;
+	border:1px solid #2e72a3;
+	padding:2px 5px 2px 2px;
+	margin:1px 0px 1px 5px;
+	text-decoration:none;
+	font-weight:bold;
+	background-color:68bce8;
+	color:#ffffff;
+}
+	a.language_selector_on img{
+		vertical-align:middle;
+		margin:0 5px 0 0;
+	}
+
+/**
+* ANIX MESSAGES STYLES
+**/
+div#message_header{
+	position:absolute;
+	top:30px;
+	left:25%;
+	width:50%;
+	height:20px;
+	border:1px solid #284974;
+	background:#ffffff;
+	text-align:center
+}
+
+	div#message_header table{
+		width:100%;
+		border-collapse:collapse;
+	}
+
+	div#message_header td{
+		text-align:center;
+		font-weight:bold;
+	}
+
+	div#message_header td img{
+		vertical-align:middle;
+		padding:0 5px 0 0;
+	}
+
+	div#message_header td.error{
+		color:#b53407;
+	}
+	div#message_header td.warning{
+		color:#d56e00;
+	}
+
+	div#message_header td#message_button{
+		width:60px;
+		padding:0 0 0 25px;
+		color:#ffffff;
+		cursor:pointer;
+		text-align:left;
+	}
+
+	div#message_header td#message_button.closed{
+		background:url(../images/arrow_details_down.jpg);
+		background-repeat:no-repeat;
+		background-color:#284974;
+	}
+
+	div#message_header td#message_button.opened{
+		background:url(../images/arrow_details_up.jpg);
+		background-repeat:no-repeat;
+		background-color:#284974;
+	}
+div#message_details{
+	position:absolute;
+	top:50px;
+	left:25%;
+	width:50%;
+	height:200px;
+	border:1px solid #284974;
+	background:#ffffff;
+	overflow:scroll;
+	overflow-x: hidden;
+}
+
+
+a.button{
+	display:block;
+	float:right;
+	border:1px solid #2e72a3;
+	padding:2px 5px 2px 2px;
+	margin:1px 0px 1px 5px;
+	text-decoration:none;
+	font-weight:bold;
+}
+	a.button:hover{
+		color:#68bce8;
+	}
+	a.button img{
+		vertical-align:middle;
+		padding:0 5px 0 0;
+	}
+
+a.menu {
+	text-align : left;
+	margin-left: 0px;
+	margin-right: 5px;
+	font: normal 12px Verdana, Arial, Helvetica, sans-serif;
+	color:#375b7f;
+}
+a.menu:hover{
+	text-align : left;
+	margin-left: 0px;
+	margin-right: 5px;
+	font: normal 12px Verdana, Arial, Helvetica, sans-serif;
+	color:#08041b;
+}
+.menuhaut A:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: Verdana,Arial,sans-serif; BACKGROUND-COLOR: transparent; TEXT-DECORATION: none
+}
+.menuhaut A:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: Verdana,Arial,sans-serif; BACKGROUND-COLOR: transparent; TEXT-DECORATION: none
+}
+.menuhaut A:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: Verdana,Arial,sans-serif; BACKGROUND-COLOR: transparent; TEXT-DECORATION: underline
+}
+
+.mainTitle {
+	text-align : left;
+	font: Bold 20px Arial, Helvetica, sans-serif;
+	color:#ff9a44;
+	color:#FFFFFF;
+}
+
+.siteTitle {
+	text-align : center;
+	font: Normal 16px Arial, Helvetica, sans-serif;
+	color:#244978;
+}
+
+.subtitle1 {
+	text-align : left;
+	font: Bold 16px Arial, Helvetica, sans-serif;
+	color:#FFFFFF;
+}
+
+.subtitle2 {
+	text-align : left;
+	font: Bold 14px Arial, Helvetica, sans-serif;
+	color:#FFFFFF;
+}
+.fieldTitle {
+	text-align : left;
+	font: Bold 9px Verdana,Arial, Helvetica, sans-serif;
+	color:#000000;
+}
+
+input {
+	font-size: 12px;
+	border:1px solid #2e71a5;
+}
+
+select {
+	font-size: 12px;
+	border:1px solid #2e71a5;
+}
+table.mceEditor select{
+	font-size:normal;
+	border:normal;
+}
+textarea.mceNoEditor {
+	font-size: 12px;
+	border:1px solid #2e71a5;
+}
+
+input.bouton{
+	background-color: #cc0000;
+	font-weight: bold;
+	font-size: 12px;
+	color: white;
+}
+
+input.red {
+	background-color: #cc0000;
+	font-weight: bold;
+	font-size: 12px;
+	color: white;
+}
+
+table.message{
+  font: 12px Arial, Helvetica, sans-serif;
+  font-size:12px;
+	/*font-family: Arial;
+	font-size: 12;
+	color : #0000FF;*/
+	border: 1px solid #000000;
+	border-collapse: separate;
+}
+table.message tr{
+	border-bottom:1px solid #000000;
+	border-bottom:1px solid #000000;
+}
+
+
+
+.edittable_header{
+  text-align : left;
+	font: Bold 12px Arial, Helvetica, sans-serif;
+	color:#000000;
+}
+
+table.edittable_text{
+	font: 12px Arial, Helvetica, sans-serif;
+	color : #00000;
+	border: 1px solid #000000;
+	border-collapse: separate;
+}
+
+table.edittable_text tr{
+	border-bottom:1px solid #000000;
+	border-bottom:1px solid #000000;
+}
+
+table {
+  font: 12px Arial, Helvetica, sans-serif;
+}
+
+.info_notice{
+  text-align: justify;
+	font: 10px Verdana,Arial, Helvetica, sans-serif;
+	color:#FFFFFF;
+	align: justify;
+}
+
+.info_error{
+  text-align: justify;
+	font: 10px Verdana,Arial, Helvetica, sans-serif;
+	color:#FF0000;
+	align: justify;
+}
+
+td.alignee{
+  text-align: justify;
+	align: justify;
+}
+
+.copyright{
+  text-align : right;
+	font: Italic 9px Verdana, Arial, Helvetica, sans-serif;
+	color:#244978;
+}
+.version{
+  text-align : left;
+	font: BOLD 9px Verdana, Arial, Helvetica, sans-serif;
+	color:#244978;
+}
+
+img.item_image{
+	 padding:5px;
+	 border:1px solid #000000;
+}
+
+div.product_list{
+	float:left;
+	clear:both;
+	width:100%;
+	margin:0;
+	padding:0;
+	border-bottom:1px solid #000000;
+}
+	div.product_list div{
+		float:left;
+		width:162px;
+		background:#e7eff2;
+		margin:0;
+		padding:0;
+	}
+	div.product_list p{
+		float:left;
+		margin:0;
+		padding:0;
+	}
+
+
+/**
+* INVOICES
+**/
+div.invoice_items{
+	width:100%;
+	text-align:center;
+}
+table.invoice_items{
+	/*width:100%;*/
+	margin:0 auto;
+	text-align:left;
+	border:1px solid #000000;
+	background-color:#ffffff;
+}
+	table.invoice_items th{
+		background-color:#2e72a3;
+		color:#ffffff;
+		text-align:center;
+	}
+
+	table.invoice_items td{
+		vertical-align:top;
+		border:1px solid #000000;
+		padding:5px;
+	}
+	table.invoice_items input.price{
+		text-align:right;
+	}
+
+/**
+* REVIEWS
+**/
+table.reviews{
+	/*width:100%;*/
+	margin:0 auto;
+	text-align:left;
+	border:1px solid #000000;
+	background-color:#ffffff;
+}
+	table.reviews th{
+		background-color:#2e72a3;
+		color:#ffffff;
+		text-align:center;
+	}
+
+	table.reviews td{
+		vertical-align:top;
+		border:1px solid #000000;
+		padding:5px;
+	}
+	table.reviews td.title{
+		background:#e7eff2;
+	}
+
